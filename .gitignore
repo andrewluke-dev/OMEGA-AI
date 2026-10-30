@@ -1,0 +1,182 @@
+# ==================================================
+# OMEGA AI 5.0 - GITIGNORE
+# Flutter + Dart + Python + FastAPI + OpenAI
+# ==================================================
+
+
+# ==================================================
+# 1. SECRETS / API KEYS
+# ==================================================
+
+.env
+.env.*
+!.env.example
+
+**/.env
+**/.env.*
+!**/.env.example
+
+*.pem
+*.key
+secrets.json
+credentials.json
+
+
+# ==================================================
+# 2. PYTHON / FASTAPI
+# ==================================================
+
+__pycache__/
+**/__pycache__/
+
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+*.egg-info/
+dist/
+pip-wheel-metadata/
+
+
+# ==================================================
+# 3. DATABASES / LOCAL DATA
+# ==================================================
+
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+*.sqlite
+*.sqlite3
+
+*.sqlite-wal
+*.sqlite-shm
+
+*.sqlite3-wal
+*.sqlite3-shm
+
+backend/uploads/
+backend/storage/
+backend/data/private/
+
+
+# ==================================================
+# 4. FLUTTER / DART / PUB
+# ==================================================
+
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+.pub-cache/
+.pub/
+
+.packages
+
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+/build/
+/coverage/
+
+*.freezed.dart
+*.g.dart
+
+
+# ==================================================
+# 5. ANDROID
+# ==================================================
+
+android/local.properties
+
+*.jks
+*.keystore
+
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+*.apk
+*.aab
+
+
+# ==================================================
+# 6. IOS / MACOS
+# ==================================================
+
+.DS_Store
+
+.swiftpm/
+
+Pods/
+
+*.xcuserstate
+
+**/xcuserdata/
+
+
+# ==================================================
+# 7. IDE / EDITORS
+# ==================================================
+
+.idea/
+
+*.iml
+*.ipr
+*.iws
+
+.vscode/
+
+.atom/
+
+*.swp
+
+.history/
+
+
+# ==================================================
+# 8. BUILD / TEMPORARY FILES
+# ==================================================
+
+*.class
+*.log
+
+.build/
+.buildlog/
+
+.gradle/
+
+migrate_working_dir/
+
+.svn/
+
+*.tmp
+*.temp
+*.bak
+
+
+# ==================================================
+# 9. DEBUG / GENERATED FILES
+# ==================================================
+
+app.*.symbols
+app.*.map.json
+
+flutter_*.png
+
+*.trace
+
+
+# ==================================================
+# END - OMEGA AI 5.0
+# ==================================================
